@@ -27,12 +27,11 @@ $access_allowed = $have_name && $have_e_mail && $have_age;
 </head>
 
 <body>
-    <?php if ($access_allowed) { ?>
+    <?php if ($access_allowed) : ?>
         <h1>Accesso riuscito</h1>
-    <?php } else { ?>
+    <?php else : ?>
         <h1>Accesso Negato</h1>
-    <?php } ?>
-
+    <?php endif ?>
 </body>
 
 </html>
