@@ -64,8 +64,8 @@ $matches = [
 
     <form action="response.php" method="GET">
         <input type="text" name="name" placeholder="Insert your name">
-        <input type="email" name="e-mail" placeholder="Insert your email">
-        <input type="number" name="age" placeholder="Insert your age">
+        <input type="text" name="e-mail" placeholder="Insert your email">
+        <input type="text" name="age" placeholder="Insert your age">
         <button type="submit">Accedi</button>
     </form>
 </body>
