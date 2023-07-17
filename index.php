@@ -37,6 +37,13 @@ $matches = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Php snaks</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 16px;
+            width: 30%;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,6 +57,17 @@ $matches = [
             <li><?= $home_team ?> - <?= $away_team ?> | <?= $home_team_points ?>-<?= $away_team_points ?> </li>
         <?php endforeach ?>
     </ul>
+
+    <br>
+    <br>
+    <br>
+
+    <form action="response.php" method="GET">
+        <input type="text" name="name" placeholder="Insert your name">
+        <input type="email" name="e-mail" placeholder="Insert your email">
+        <input type="number" name="age" placeholder="Insert your age">
+        <button type="submit">Accedi</button>
+    </form>
 </body>
 
 </html>
