@@ -25,8 +25,11 @@ $matches = [
         'away_team' => 'Milwaukee Bucks',
         'away_team_points' => 53,
     ],
-]
+];
 
+$paragraph = "Plutone è un pianeta nano orbitante nella parte esterna del sistema solare, nella fascia di Kuiper. Scoperto da Clyde Tombaugh nel 1930, è stato considerato per 76 anni il nono pianeta del sistema solare. Dal 1992 il suo status di pianeta venne messo in discussione in seguito alla scoperta di diversi oggetti di dimensioni simili nella fascia di Kuiper. La scoperta di Eris nel 2005, un pianeta nano del disco diffuso che è il 27% più massiccio di Plutone, ha portato l'Unione Astronomica Internazionale l'anno successivo a riconsiderare, dopo un acceso dibattito, la definizione di pianeta, e a riclassificare così Plutone come pianeta nano.";
+
+$exploded_paragraph = explode('.', $paragraph);
 ?>
 
 
@@ -68,6 +71,15 @@ $matches = [
         <input type="text" name="age" placeholder="Insert your age">
         <button type="submit">Accedi</button>
     </form>
+
+    <br>
+    <br>
+    <br>
+
+    <?php foreach ($exploded_paragraph as $paragraph) : ?>
+        <p><?= $paragraph ?>.</p>
+    <?php endforeach ?>
+
 </body>
 
 </html>
