@@ -40,7 +40,16 @@ $matches = [
 </head>
 
 <body>
-
+    <ul>
+        <?php foreach ($matches as [
+            'home_team' => $home_team,
+            'home_team_points' => $home_team_points,
+            'away_team' => $away_team,
+            'away_team_points' => $away_team_points
+        ]) : ?>
+            <li><?= $home_team ?> - <?= $away_team ?> | <?= $home_team_points ?>-<?= $away_team_points ?> </li>
+        <?php endforeach ?>
+    </ul>
 </body>
 
 </html>
